@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+  --light-primary-color: #002342;
+  --primary-color: #154269;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: left;
+  padding-right: 0.15em;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 5px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 2em 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.pl-2 {
+  padding-left: 0.5em;
+}
+
+.my-2 {
+  margin: 0.25em 0;
+}
+
+.cv-grid .personal-info {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75em 0;
+}
+
+.personal-info h2 {
+  background-color: var(--light-primary-color);
+  text-transform: uppercase;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+i {
+  margin-right: 0.5em;
+}
+
+.cv-main {
+  padding: 0.75em 0.25em;
+  /* border: 1px solid green; */
+}
+
+.cv-main h2 {
+  padding: 0.25em 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  color: var(--primary-color);
+}
+
+.cv-main h3 {
+  color: var(--primary-color);
+}
+.cv-main-section {
+  margin: 1.5em 0;
+}
+
+@media (min-width: 768px) {
+  .cv-maing {
+    padding: 0.75em 0.5em;
+  }
+}
